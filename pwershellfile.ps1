@@ -1,1 +1,1 @@
-pg_dump --help
+az
