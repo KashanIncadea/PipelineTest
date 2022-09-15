@@ -1,2 +1,2 @@
 az
-az login --allow-no-subscription
+az account show
