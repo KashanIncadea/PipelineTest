@@ -1,2 +1,2 @@
-az --help
-ssh azureuser@13.94.128.240 /bin/bash
+
+ssh azureuser@20.234.239.97
