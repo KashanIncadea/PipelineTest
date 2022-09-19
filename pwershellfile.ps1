@@ -1,2 +1,2 @@
 az --help
-pg_dump --help
+ssh azureuser@13.94.128.240
