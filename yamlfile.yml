@@ -20,6 +20,6 @@ steps:
     azureSubscription: 'Azure subscription 1 (b0b4b5a1-15df-4090-9ade-a43bf67dbedb)'
     scriptType: 'pscore'
     scriptLocation: 'inlineScript'
-    inlineScript: 'az vm run-command invoke --command-id RunShellScript --name myVM -g myResourceGroup --scripts "PGPASSWORD=Admin12345 psql -h kashanpostgres.postgres.database.azure.com -p 5432 -U Kashan@kashanpostgres -W -v -d testde2 -f bkup.sql"'
+    inlineScript: 'az vm run-command invoke --command-id RunShellScript --name myVM -g myResourceGroup --scripts "PGPASSWORD=Admin12345 psql -h kashanpostgres.postgres.database.azure.com -p 5432 -U Kashan@kashanpostgres -v -d testde2 -f bkup.sql"'
 
 #    inlineScript: 'az vm run-command invoke --command-id RunShellScript --name myVM -g myResourceGroup --scripts "PGPASSWORD=Admin12345 pg_dump -h kashanpostgres.postgres.database.azure.com -p 5432 -U Kashan@kashanpostgres -v -d IDigital365 -f bkup.sql"'
