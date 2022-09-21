@@ -10,8 +10,6 @@ pool:
 variables:
   -name: vm_name
   -value: "myVM"
-  -name: rg_name
-  value: "myResourceGroup"
   
   
 steps
@@ -23,4 +21,4 @@ steps
         azureSubscription: 'Azure subscription 1'
         scriptType: 'ps'
         scriptLocation: 'inlineScript'
-        inlineScript: 'az vm run-command invoke --command-id RunShellScript --name $(vm_name) -g $(vnet_rg_name) --scripts "hostname"'
+        inlineScript: 'az vm run-command invoke --command-id RunShellScript --name $(vm_name) -g myResourceGroup --scripts "hostname"'
