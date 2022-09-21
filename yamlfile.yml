@@ -20,7 +20,7 @@ steps
 - task: AzureCLI@2
       displayName: execute command inside vm
       inputs:
-        azureSubscription: 'subscription'
+        azureSubscription: 'Azure subscription 1'
         scriptType: 'ps'
         scriptLocation: 'inlineScript'
-        inlineScript: 'az vm run-command invoke --command-id RunPowerShellScript --name $(vm_name) -g $(vnet_rg_name) --scripts "hostname"'
+        inlineScript: 'az vm run-command invoke --command-id RunShellScript --name $(vm_name) -g $(vnet_rg_name) --scripts "hostname"'
