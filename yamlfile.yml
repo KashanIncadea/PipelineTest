@@ -12,8 +12,7 @@ variables:
   -value: "myVM"
   
   
-steps
-
+steps:
 
 - task: AzureCLI@2
       displayName: execute command inside vm
