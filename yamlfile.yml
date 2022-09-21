@@ -9,7 +9,7 @@ pool:
   
 variables:
   -name: vm_name
-  - value: "myVM"
+  -value: "myVM"
   -name: rg_name
   value: "myResourceGroup"
   
